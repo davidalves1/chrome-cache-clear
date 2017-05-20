@@ -1,0 +1,34 @@
+body {
+	height: 100px;
+	min-width: 100px;
+}
+
+button {
+	color: #fff;
+	background-color: #6496c8;
+	text-shadow: -1px 1px #417cb8;
+	border: none;
+	height: 30px;
+	width: 100%;
+}
+
+button:hover {
+	transition: .3s;
+	background-color: #346392;
+	text-shadow: -1px 1px #27496d;
+}
+
+button:active {
+	background-color: #27496d;
+	text-shadow: -1px 1px #193047;
+}
+
+.message {
+	color: #1b5e20;
+	margin: 10px 0;
+	text-align: center;
+}
+
+.options {
+	margin: 5px 0;
+}

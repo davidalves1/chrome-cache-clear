@@ -1,43 +1,24 @@
 <!doctype html>
 <html>
   <head>
+  	<meta charset="utf-8">
     <title>Clear Chrome Cache</title>
-    <script src="popup.js"></script>
-    <style>
-    	body {
-    		height: 60px;
-    		min-width: 100px;
-    	}
-
-		button {
-			color: #fff;
-			background-color: #6496c8;
-			text-shadow: -1px 1px #417cb8;
-			border: none;
-			height: 30px;
-			width: 100%;
-		}
-
-		button:hover {
-			transition: .3s;
-			background-color: #346392;
-			text-shadow: -1px 1px #27496d;
-		}
-
-		button:active {
-			background-color: #27496d;
-			text-shadow: -1px 1px #193047;
-		}
-
-		.message {
-			color: #1b5e20;
-			margin-top: 15px;
-			text-align: center;
-		}
-    </style>
+	<link rel="stylesheet" href="main.css">
   </head>
   <body>
-    <button id="btnClear">Limpar o cache</button>
+  	<div class="options">
+  		<input type="checkbox" id="cache" name="subscribe" checked>
+    	<label for="cache">Cache</label>
+		<br>
+   		<input type="checkbox" id="appCache" name="subscribe" checked>
+    	<label for="appCache">App Cache</label>
+		<br>
+    	<input type="checkbox" id="cookies" name="subscribe">
+    	<label for="cookies">Cookies</label>
+  	</div>
+    
+    <button id="btnClear">Limpar</button>
     <div id="message" class="message"></div>
+    <script src="popup.js"></script>
   </body>
 </html>
