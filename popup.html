@@ -4,16 +4,40 @@
     <title>Clear Chrome Cache</title>
     <script src="popup.js"></script>
     <style>
-    	
     	body {
-    		min-height: 50px;
+    		height: 60px;
     		min-width: 100px;
     	}
 
+		button {
+			color: #fff;
+			background-color: #6496c8;
+			text-shadow: -1px 1px #417cb8;
+			border: none;
+			height: 30px;
+			width: 100%;
+		}
+
+		button:hover {
+			transition: .3s;
+			background-color: #346392;
+			text-shadow: -1px 1px #27496d;
+		}
+
+		button:active {
+			background-color: #27496d;
+			text-shadow: -1px 1px #193047;
+		}
+
+		.message {
+			color: #1b5e20;
+			margin-top: 15px;
+			text-align: center;
+		}
     </style>
   </head>
   <body>
-    <button id="clear_cache">Limpar o cache</button>
-    <div id="message"></div>
+    <button id="btnClear">Limpar o cache</button>
+    <div id="message" class="message"></div>
   </body>
 </html>

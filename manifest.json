@@ -2,9 +2,14 @@
   "manifest_version": 2,
 
   "name": "Chrome Cache Clear",
-  "description": "Limpa o cache do navegador",
+  "description": "Extensão para realizar a limpeza do cache do navegador",
   "version": "1.0",
-
+  "icons": {
+    "44": "assets/trash_icon-44.png",
+    "128": "assets/trash_icon-128.png",
+    "512": "assets/trash_icon-512.png"
+  },
+  "author": "David Alves de Souza",
   "browser_action": {
     "default_icon": "assets/trash_icon-128.png",
     "default_popup": "popup.html",
