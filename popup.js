@@ -7,11 +7,13 @@ document.addEventListener('DOMContentLoaded', function() {
 	function clearChromeCache() {
 		var message = document.querySelector('#message');
 
+		var period = document.querySelector('#periodo').value;
+
 		message.innerHTML = '<span>-- Limpando... --</span>';
 		
 		chrome.browsingData.remove(
 			{
-				'since': 0 // Define que irá excluir desde o início
+				'since': parseInt(period)
 			}, {
 				'appcache': document.querySelector('#cache').checked,
 			    'cache': document.querySelector('#appCache').checked,

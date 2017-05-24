@@ -1,5 +1,5 @@
 body {
-	height: 100px;
+	height: 130px;
 	min-width: 100px;
 }
 
@@ -31,4 +31,8 @@ button:active {
 
 .options {
 	margin: 5px 0;
+}
+
+.mt-5 {
+	margin-top: 5px;
 }

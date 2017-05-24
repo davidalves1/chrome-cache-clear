@@ -7,17 +7,23 @@
   </head>
   <body>
   	<div class="options">
-  		<input type="checkbox" id="cache" name="subscribe" checked>
+  		<input type="checkbox" id="cache" name="clear" class="mt-5" checked>
     	<label for="cache">Cache</label>
-		<br>
-   		<input type="checkbox" id="appCache" name="subscribe" checked>
+      <br>
+   		<input type="checkbox" id="appCache" name="clear" class="mt-5" checked>
     	<label for="appCache">App Cache</label>
-		<br>
-    	<input type="checkbox" id="cookies" name="subscribe">
+      <br>
+    	<input type="checkbox" id="cookies" name="clear" class="mt-5">
     	<label for="cookies">Cookies</label>
+      <br>
+      <select name="periodo" id="periodo" class="mt-5">
+        <option value="86400000">1 dia</option>
+        <option value="604800000">1 semana</option>
+        <option value="2592000000">1 mês</option>
+        <option value="0">Tudo</option>
+      </select>
   	</div>
-    
-    <button id="btnClear">Limpar</button>
+    <button id="btnClear" class="mt-5">Limpar</button>
     <div id="message" class="message"></div>
     <script src="popup.js"></script>
   </body>
